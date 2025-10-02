@@ -14,11 +14,7 @@ return new class extends Migration
         Schema::create('generos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->text('descricao')->nullable();
-            $table->string('foto')->nullable();
-            $table->date('nascimento')->nullable();
-            $table->foreignId('nacionalidade_id')->constrained()->nullable();
-        
+                
             $table->timestamps();
         });
     }
