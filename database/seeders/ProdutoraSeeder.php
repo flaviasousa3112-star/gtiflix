@@ -1,0 +1,30 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class ProdutoraSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('Produtora')->insert(
+        
+            ['nome' => "Warner Bros",
+        ],
+
+            ['nome' => "Universal Studios"
+    ],
+             
+            ['nome' => "Paramount"
+], 
+
+           ['nome' => "VideoFilmes"
+]
+        );
+    }
+}

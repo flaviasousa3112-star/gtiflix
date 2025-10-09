@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        
         // User::factory(10)->create();
 
         // User::factory()->create([
@@ -26,6 +27,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             GeneroSeeder::class,
             AtorSeeder::class,
+            DiretorSeeder::class,
+            FilmeSeeder::class,
+            NacionalidadeSeeder::class,
+            ProdutoraSeeder::class,
+
+
+
+
 
         ]);
 
