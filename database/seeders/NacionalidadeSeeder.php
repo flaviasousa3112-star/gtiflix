@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class NacionalidadeSeeder extends Seeder
 {
@@ -14,11 +15,9 @@ class NacionalidadeSeeder extends Seeder
     {
      DB::table('Nacionalidade')->insert(
         
-            ['nome' => "Brasileiro",
-        ],
+            ['nome' => "Brasileiro"],
 
-            ['nome' => "Estadunidense"
-            ]   
+            ['nome' => "Estadunidense"]
         );
     }
 

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DiretorTableSeeder extends Seeder
 {
@@ -19,8 +20,7 @@ class DiretorTableSeeder extends Seeder
         'descricao' => "é um diretor e produtor brasileiro",
         'foto' => "https://www.papodecinema.com.br/wp-content/uploads/2016/04/20180413-media-copy.webp",
         'nascimento' => "12 de abril de 1956",
-        'nacionalidade_id' => 1
-        ]
+        'nacionalidade_id' => 1]
             );
     }
 }
