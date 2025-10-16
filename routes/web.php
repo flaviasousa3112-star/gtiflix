@@ -2,6 +2,7 @@
 
 use App\Models\Ator;
 use App\Models\Genero;
+use App\Models\Filme;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -30,6 +31,11 @@ Route::get('/atores', function() {
     dd($minhaVariavel);
 });
 
+Route::get('/lista-filmes', function(){
+    $filmes = Filme::all();
+    return view('lista-filmes',
+        compact('filmes'));
+});
 
 
 

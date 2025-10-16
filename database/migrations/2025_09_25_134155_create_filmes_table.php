@@ -20,9 +20,9 @@ return new class extends Migration
             $table->text('descricao')->nullable();
             $table->string('poster');
             $table->string('capa');
-            $table->date('diretor_id')->constrained ('diretores','id')->nullable();
-            $table->foreignId('produtora_id')->constrained ()->nullable();
-            $table->foreignId('nacionalidade_id')->constrained ()->nullable();
+            $table->foreignId('diretor_id')->nullable()->constrained('diretores','id');
+            $table->foreignId('produtora_id')->nullable()->constrained ();
+            $table->foreignId('nacionalidade_id')->nullable()->constrained ();
 
             $table->timestamps();
         }); 

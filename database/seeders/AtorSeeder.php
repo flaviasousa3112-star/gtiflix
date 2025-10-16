@@ -15,7 +15,7 @@ class AtorSeeder extends Seeder
     {
     
         DB::table('atores')->insert(
-                
+           [    
             ['nome'=> "Vagner Moura",
             'descricao'=> "Ator Foda brasileiro",
             'nacionalidade_id' => 1 ],
@@ -23,7 +23,7 @@ class AtorSeeder extends Seeder
             ['nome'=> "Will Smith",
             'descricao'=> "O que fez um Maluco no Pedaco",
             'nacionalidade_id' => 2 ],
-            
+           ]
         );
     }
 }

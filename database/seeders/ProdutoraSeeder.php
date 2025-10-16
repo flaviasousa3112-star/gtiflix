@@ -13,19 +13,16 @@ class ProdutoraSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('Produtora')->insert(
-        
-            ['nome' => "Warner Bros",
-        ],
+        DB::table('produtoras')->insert(
+        [
+            ['nome' => "Warner Bros",],
 
-            ['nome' => "Universal Studios"
-    ],
+            ['nome' => "Universal Studios"],
              
-            ['nome' => "Paramount"
-], 
+            ['nome' => "Paramount"], 
 
-           ['nome' => "VideoFilmes"
-]
-        );
+           ['nome' => "VideoFilmes"]
+        ]
+      );
     }
 }

@@ -25,12 +25,13 @@ class DatabaseSeeder extends Seeder
     
     
         $this->call([
-            GeneroSeeder::class,
             NacionalidadeSeeder::class,
             AtorSeeder::class,
             DiretorSeeder::class,
             ProdutoraSeeder::class,
+            GeneroSeeder::class,
             FilmeSeeder::class,
+         
           
 
 
