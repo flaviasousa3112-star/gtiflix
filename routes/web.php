@@ -5,9 +5,9 @@ use App\Models\Genero;
 use App\Models\Filme;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/Ste', function() {
     echo 'Olá Ste';
@@ -31,12 +31,15 @@ Route::get('/atores', function() {
     dd($minhaVariavel);
 });
 
-Route::get('/lista-filmes', function(){
+Route::get('/', function(){
     $filmes = Filme::all();
     return view('lista-filmes',
         compact('filmes'));
 });
 
-
+Route::get('/detalhes-filme/{filme}',
+function(Filme $filme){
+return view ('detalhes-filme', compact('filme'));
+});
 
 
