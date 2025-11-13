@@ -17,12 +17,20 @@ class DiretorSeeder extends Seeder
 
             DB::table('diretores')->insert(
         [        
-        ['nome' => "Walter Salles",
-        'descricao' => "é um diretor e produtor brasileiro",
+        ['nome' => "Catherine Hardwicke",
+        'descricao' => "Diretora que produziu Crepusculo (racista)",
         'foto' => "https://www.papodecinema.com.br/wp-content/uploads/2016/04/20180413-media-copy.webp",
         'nascimento' => "1956-04-12",
         'nacionalidade_id' => 1],
-        ]   
+        ],
+
+        [        
+            ['nome' => "Ronny Yu",
+            'descricao' => "Diretor que não sabe fazer filme sem ser engraçado",
+            'foto' => "https://chine.in/guide/ronny_4431.html",
+            'nascimento' => "1956-04-12",
+            'nacionalidade_id' => 1],
+            ]   
      );
     }
 }
